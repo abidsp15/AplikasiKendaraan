@@ -1,69 +1,99 @@
-🚗 Aplikasi Data Kendaraan
+# 🚗 Aplikasi Data Kendaraan
 
-Aplikasi ini adalah web sederhana untuk mengelola data kendaraan.
-User bisa menambah, melihat, mengubah, dan menghapus data kendaraan melalui tampilan web.
+Aplikasi ini merupakan web sederhana untuk mengelola data kendaraan
+berbasis fullstack (frontend, backend, dan database).
 
-Project ini dibuat sebagai latihan/test dengan konsep fullstack (frontend + backend + database).
+Tujuan utama dari aplikasi ini adalah mempermudah proses pencatatan data
+kendaraan dengan fitur CRUD (Create, Read, Update, Delete) yang
+terintegrasi antara frontend dan backend.
 
-⚙️ Teknologi yang Digunakan
-Frontend: React.js
-Backend: Spring Boot
-Database: MySQL
-📌 Fitur
-Menampilkan data kendaraan
-Menambahkan data kendaraan
-Edit data kendaraan
-Hapus data kendaraan
-Validasi input sederhana
-🗂 Data yang Digunakan
+------------------------------------------------------------------------
 
-Data kendaraan yang disimpan meliputi:
+## ✨ Fitur Utama
 
-Nomor Registrasi (unik & wajib)
-Nama Pemilik (wajib)
-Alamat
-Merk Kendaraan
-Tahun Pembuatan
-Kapasitas Mesin
-Warna
-Bahan Bakar
-🚀 Cara Menjalankan
-1. Setup Database
+-   Menampilkan daftar data kendaraan
+-   Menambahkan data kendaraan baru
+-   Mengedit data kendaraan
+-   Menghapus data kendaraan
+-   Validasi input sederhana
 
-Buat database di MySQL:
+------------------------------------------------------------------------
 
+## ⚙️ Teknologi yang Digunakan
+
+-   Frontend: React.js\
+-   Backend: Spring Boot\
+-   Database: MySQL
+
+------------------------------------------------------------------------
+
+## 🗂 Struktur Data
+
+Data kendaraan yang digunakan meliputi:
+
+-   Nomor Registrasi (unik & wajib)
+-   Nama Pemilik (wajib)
+-   Alamat
+-   Merk Kendaraan
+-   Tahun Pembuatan
+-   Kapasitas Mesin
+-   Warna
+-   Bahan Bakar
+
+------------------------------------------------------------------------
+
+## 🚀 Cara Menjalankan Aplikasi
+
+### 1. Setup Database
+
+``` sql
 CREATE DATABASE kendaraan_db;
-2. Jalankan Backend
+```
 
-Masuk ke folder backend:
+Sesuaikan konfigurasi database di file:
+backend/src/main/resources/application.properties
 
+------------------------------------------------------------------------
+
+### 2. Jalankan Backend
+
+``` bash
 cd backend
 mvn spring-boot:run
+```
 
-Backend akan berjalan di:
-http://localhost:8080
+Backend akan berjalan di: http://localhost:8080
 
-3. Jalankan Frontend
+------------------------------------------------------------------------
 
-Masuk ke folder frontend:
+### 3. Jalankan Frontend
 
+``` bash
 cd frontend
 npm install
 npm start
+```
 
-Frontend akan terbuka di:
-http://localhost:3000
+Frontend akan berjalan di: http://localhost:3000
 
-📝 Catatan
-Pastikan MySQL sudah berjalan
-Pastikan konfigurasi database di application.properties sudah sesuai
-Jalankan backend terlebih dahulu sebelum frontend
-🎯 Penutup
+------------------------------------------------------------------------
 
-Aplikasi ini dibuat untuk menunjukkan dasar kemampuan fullstack, seperti:
+## 📝 Catatan
 
-penggunaan API
-pengolahan data CRUD
-integrasi frontend dan backend
+-   Pastikan MySQL sudah berjalan
+-   Jalankan backend terlebih dahulu sebelum frontend
+-   Pastikan konfigurasi database sudah sesuai
 
-Struktur project dibuat sederhana agar mudah dipahami dan bisa dikembangkan lebih lanjut.
+------------------------------------------------------------------------
+
+## 🎯 Tujuan Project
+
+Project ini dibuat untuk menunjukkan kemampuan dasar dalam: -
+Pengembangan aplikasi fullstack - Integrasi API antara frontend dan
+backend - Pengolahan data CRUD - Struktur project yang rapi dan mudah dikembangkan
+
+------------------------------------------------------------------------
+
+## 👨‍💻 Author
+
+Abidsyach Pramana
